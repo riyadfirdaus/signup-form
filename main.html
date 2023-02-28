@@ -16,21 +16,24 @@
             </div>
         </div>
         <div class="right-side">
-            <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams.
-                <br>
-                Sign up <em>now</em> to get started.
-            </p>
-            <p>You <em>know</em> you want to.
-            </p>
-            <div class="form">
-                <form action="" method="POST">
+            <div class="dummy-text padding">
+                <p>This is not real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <br>
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.
+                </p>
+            </div>
+            <form action="#" method="POST">
+                <div class="input-form padding">
+                    <p class="form-title">Let's do this!</p>
                     <div class="inputs">
-                        <label for="firstName">FIRST NAME</label>
+                        <label for="firstName">First Name</label>
                         <input type="text" name="firstName" id="firstName" required>
                     </div>
                     
                     <div class="inputs">
-                        <label for="lastName">LAST NAME</label>
+                        <label for="lastName">Last Name</label>
                         <input type="text" name="lastName" id="lastName" required>
                     </div>
                     
@@ -40,11 +43,21 @@
                     </div>
                     
                     <div class="inputs">
-                        <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="text" name="phoneNumber" id="phoneNumber">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" minlength="9" required>
                     </div>
-                </form>
-            </div>
+                    <div class="inputs">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Create Account</button>
+            </form>
+            <p class="padding">Already have an account? <a href="#">Log In</a></p>
         </div>
     </div>
 </body>
